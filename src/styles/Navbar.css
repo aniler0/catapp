@@ -6,11 +6,14 @@
   background: linear-gradient(
     90deg,
     rgb(79, 43, 242) 0%,
-    rgb(255, 217, 1) 100%
+    rgb(0, 153, 187) 100%
   );
   -webkit-box-shadow: 0px 3px 11px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 3px 11px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.75);
+}
+.navbar-right img {
+  height: 50px;
 }
 .navbar-left {
   margin-left: 10px;
@@ -24,13 +27,7 @@
   transition: all;
   margin-left: 20px;
 }
-.hamburger-menu:hover {
-  background-color: rgba(51, 83, 211, 0.426);
-  transition: all 0.2s ease-out;
-}
-.hamburger-menu img {
-  height: 30px;
-}
+
 .navbar input {
   margin-left: 10px;
   padding: 5px;
@@ -43,11 +40,7 @@
   border-radius: 5px;
   outline: none;
 }
-.navbar input:hover {
-  background-color: rgba(255, 255, 255, 0.042);
 
-  transition: all 0.2s ease-out;
-}
 @media screen and (max-width: 750px) {
   .navbar {
     width: 100%;

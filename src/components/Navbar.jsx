@@ -2,19 +2,46 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/Navbar.css";
 import caticon from "../images/caticon.png";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   return (
-    <div className="navbar">
+    <motion.div
+      initial={{ y: "-250px" }}
+      animate={{ y: "0px" }}
+      transition={{ delay: 0, type: "spring", stiffness: 30 }}
+      className="navbar"
+    >
       <div className="navbar-left">
         <Link to="/random">
-          <input type="button" value="Random Images" />
+          <motion.input
+            whileHover={{
+              scale: 1.1,
+              textShadow: "0px 0px 5px rgb(255,255,255)",
+            }}
+            type="button"
+            value="Random Images"
+          />
         </Link>
         <Link to="/breeds">
-          <input type="button" value="Cat Breeds" />
+          <motion.input
+            whileHover={{
+              scale: 1.1,
+              textShadow: "0px 0px 5px rgb(255,255,255)",
+            }}
+            type="button"
+            value="Cat Breeds"
+          />
         </Link>
         <Link to="/about">
-          <input type="button" value="About" />
+          <motion.input
+            whileHover={{
+              scale: 1.1,
+              textShadow: "0px 0px 5px rgb(255,255,255)",
+            }}
+            type="button"
+            value="About"
+          />
         </Link>
       </div>
       <div className="navbar-right">
@@ -22,7 +49,7 @@ const Navbar = () => {
           <img src={caticon} alt="cat" />
         </Link>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
