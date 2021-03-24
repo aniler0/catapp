@@ -1,13 +1,24 @@
 import "./App.css";
-import Main from "./components/Main";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Main from "./pages/Main";
+import Breeds from "./pages/Breeds";
 import Navbar from "./components/Navbar";
+import Random from "./pages/Random";
+import About from "./pages/About";
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <Main />
-    </div>
+    <Router>
+      <div className="app">
+        <Navbar />
+        <Switch>
+          <Route path="/" exact component={Main} />
+          <Route path="/random" component={Random} />
+          <Route path="/breeds" component={Breeds} />
+          <Route path="/about" component={About} />
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
