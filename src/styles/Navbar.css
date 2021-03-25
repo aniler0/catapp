@@ -3,11 +3,7 @@
   justify-content: space-between;
   padding: 5px;
   align-items: center;
-  background: linear-gradient(
-    90deg,
-    rgb(79, 43, 242) 0%,
-    rgb(0, 153, 187) 100%
-  );
+  background: linear-gradient(90deg, rgb(0, 247, 255) 0%, rgb(0, 92, 112) 100%);
   -webkit-box-shadow: 0px 3px 11px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 3px 11px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.75);
@@ -20,20 +16,13 @@
   display: flex;
   align-items: center;
 }
-.hamburger-menu {
-  padding: 8px;
-  border-radius: 999px;
-  align-items: center;
-  transition: all;
-  margin-left: 20px;
-}
 
 .navbar input {
   margin-left: 10px;
   padding: 5px;
-  color: rgb(225, 225, 225);
-  font-weight: normal;
-  font-size: large;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: medium;
   background-color: transparent;
   cursor: pointer;
   border: none;
@@ -43,7 +32,7 @@
 
 @media screen and (max-width: 750px) {
   .navbar {
-    width: 100%;
+    width: 110%;
   }
   .hamburger-menu {
     margin-left: 10px;

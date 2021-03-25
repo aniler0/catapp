@@ -17,7 +17,6 @@ const Navbar = () => {
           <motion.input
             whileHover={{
               scale: 1.1,
-              textShadow: "0px 0px 5px rgb(255,255,255)",
             }}
             type="button"
             value="Random Images"
@@ -27,7 +26,6 @@ const Navbar = () => {
           <motion.input
             whileHover={{
               scale: 1.1,
-              textShadow: "0px 0px 5px rgb(255,255,255)",
             }}
             type="button"
             value="Cat Breeds"
@@ -37,7 +35,6 @@ const Navbar = () => {
           <motion.input
             whileHover={{
               scale: 1.1,
-              textShadow: "0px 0px 5px rgb(255,255,255)",
             }}
             type="button"
             value="About"
