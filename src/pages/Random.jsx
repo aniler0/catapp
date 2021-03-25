@@ -28,6 +28,7 @@ const Random = () => {
             getRandomCatPhoto(setData, setLoaded);
           }}
           whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
         >
           Click
         </motion.button>

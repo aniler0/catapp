@@ -23,6 +23,9 @@
   height: 300px;
 }
 @media screen and (max-width: 750px) {
+  .random-cat {
+    width: 100%;
+  }
   .cat-image img {
     height: 180px;
   }
