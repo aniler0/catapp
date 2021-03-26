@@ -15,3 +15,14 @@ export const getRandomCatPhoto = async (setData, setLoaded) => {
         })
 
 }
+
+export const getCatBreeds = async (setBreeds) => {
+    await axios.get('https://api.thecatapi.com/v1/breeds')
+        .then(res => {
+            setBreeds(res.data)
+        })
+        .catch(err => {
+            console.log(err)
+        })
+
+}

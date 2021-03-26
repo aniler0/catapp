@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Main from "./pages/Main";
 import Breeds from "./pages/Breeds";
 import Navbar from "./components/Navbar";
-import Random from "./pages/Random";
+import RandomImg from "./pages/RandomImg";
 import About from "./pages/About";
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
         <Navbar />
         <Switch>
           <Route path="/" exact component={Main} />
-          <Route path="/random" component={Random} />
+          <Route path="/randomimage" component={RandomImg} />
           <Route path="/breeds" component={Breeds} />
           <Route path="/about" component={About} />
         </Switch>

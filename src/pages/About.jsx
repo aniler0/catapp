@@ -26,24 +26,36 @@ const About = () => {
       <div className="social-media">
         <h3>Contact Me</h3>
         <div className="links">
-          <a href="https://www.github.com/aniler0" target="_blank">
+          <a
+            href="https://www.github.com/aniler0"
+            rel="noreferrer"
+            target="_blank"
+          >
             <motion.img whileHover={{ scale: 1.3 }} src={github} alt="github" />
           </a>
-          <a href="https://www.linkedin.com/in/aniler0/" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/aniler0/"
+            rel="noreferrer"
+            target="_blank"
+          >
             <motion.img
               whileHover={{ scale: 1.3 }}
               src={linkedin}
               alt="linkedin"
             />
           </a>
-          <a href="http://twitter.com/_aniler" target="_blank">
+          <a href="http://twitter.com/_aniler" rel="noreferrer" target="_blank">
             <motion.img
               whileHover={{ scale: 1.3 }}
               src={twitter}
               alt="twitter"
             />
           </a>
-          <a href="http://instagram.com/anlerr" target="_blank">
+          <a
+            href="http://instagram.com/anlerr"
+            rel="noreferrer"
+            target="_blank"
+          >
             <motion.img
               whileHover={{ scale: 1.3 }}
               src={instagram}

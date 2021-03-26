@@ -13,7 +13,7 @@ const Navbar = () => {
       className="navbar"
     >
       <div className="navbar-left">
-        <Link to="/random">
+        <Link to="/randomimage">
           <motion.input
             whileHover={{
               scale: 1.1,
