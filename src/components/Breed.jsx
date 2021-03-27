@@ -30,7 +30,7 @@ const Breed = ({ breeds }) => {
       </div>
       {select && (
         <div className="breed-detail">
-          <img src={breeds[select].image.url} alt="" srcset="" />
+          <img src={breeds[select].image.url} alt="cat" />
 
           <div className="information">
             <h2>{breeds[select].name}</h2>
