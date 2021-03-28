@@ -6,6 +6,7 @@ import Breed from "../components/Breed";
 
 const Breeds = () => {
   const [breeds, setBreeds] = useState([]);
+  const [select, setSelect] = useState("");
 
   useEffect(() => {
     getCatBreeds(setBreeds);
@@ -18,7 +19,7 @@ const Breeds = () => {
       transition={{ type: "spring", delay: 0.1, stiffness: 30 }}
       className="breeds"
     >
-      <Breed breeds={breeds} />
+      <Breed breeds={breeds} select={select} setSelect={setSelect} />
     </motion.div>
   );
 };
