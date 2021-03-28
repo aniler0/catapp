@@ -1,25 +1,20 @@
-import React, { useState } from "react";
+import React from "react";
 import "../styles/Breed.css";
 import { Box, InputLabel, MenuItem, Select } from "@material-ui/core";
 import { Rating } from "@material-ui/lab";
 import Typography from "@material-ui/core/Typography";
-const Breed = ({ breeds }) => {
-  const [select, setSelect] = useState("");
-
+const Breed = ({ breeds, setSelect, select }) => {
   const handleChange = (event) => {
     setSelect(event.target.value);
-    console.log(breeds);
   };
 
   return (
     <div className="breed">
       <div className="selection-side">
         <InputLabel id="label">Select Breed</InputLabel>
-        <Select onChange={handleChange} value={select}>
-          <MenuItem value="select" disabled>
-            Select
-          </MenuItem>
+        <Select onChange={handleChange} value={"" || select}>
           {breeds.map((breed, i) => {
+            console.log(i);
             return (
               <MenuItem className="menuitem" key={i} value={i}>
                 {breed.name}
@@ -28,16 +23,19 @@ const Breed = ({ breeds }) => {
           })}
         </Select>
       </div>
+
       {select && (
         <div className="breed-detail">
-          <img src={breeds[select].image.url} alt="cat" />
-
+          {typeof breeds[select].image != "undefined" ? (
+            <img src={breeds[select].image.url} alt="cat" />
+          ) : (
+            "görsel yok"
+          )}
           <div className="information">
             <h2>{breeds[select].name}</h2>
             <h3>Origin: {breeds[select].origin}</h3>
             <h4>{breeds[select].description}</h4>
           </div>
-
           <div className="ratings">
             <Box
               component="fieldset"

@@ -24,5 +24,5 @@ export const getCatBreeds = async (setBreeds) => {
         .catch(err => {
             console.log(err)
         })
-
 }
+
